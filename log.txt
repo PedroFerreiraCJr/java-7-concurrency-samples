@@ -1,0 +1,95 @@
+Main: Status of Thread0: NEW
+Main: Status of Thread1: NEW
+Main: Status of Thread2: NEW
+Main: Status of Thread3: NEW
+Main: Status of Thread4: NEW
+Main: Status of Thread5: NEW
+Main: Status of Thread6: NEW
+Main: Status of Thread7: NEW
+Main: Status of Thread8: NEW
+Main: Status of Thread9: NEW
+Main : Id 14 - Thread - 0
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 15 - Thread - 1
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 16 - Thread - 2
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 17 - Thread - 3
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 18 - Thread - 4
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 19 - Thread - 5
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 20 - Thread - 6
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 21 - Thread - 7
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 22 - Thread - 8
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 23 - Thread - 9
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 14 - Thread - 0
+Main : Priority: 10
+Main : Old State: BLOCKED
+Main : New State: RUNNABLE
+Main : ************************************
+Main : Id 18 - Thread - 4
+Main : Priority: 10
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 19 - Thread - 5
+Main : Priority: 1
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 20 - Thread - 6
+Main : Priority: 10
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 21 - Thread - 7
+Main : Priority: 1
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 22 - Thread - 8
+Main : Priority: 10
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 23 - Thread - 9
+Main : Priority: 1
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************

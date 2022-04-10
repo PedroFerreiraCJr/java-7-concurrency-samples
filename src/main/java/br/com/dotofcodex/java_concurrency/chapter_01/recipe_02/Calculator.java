@@ -1,7 +1,7 @@
-package br.com.dotofcodex.java_concurrency.chapter_01.recipe_01;
+package br.com.dotofcodex.java_concurrency.chapter_01.recipe_02;
 
 /**
- * Implementação de uma tarefa (task) que permite calcular a tabuada de um número qualquer
+ * Tarefa para ser executada em uma Thread que calcula a tabela de multiplicação de um número qualquer
  */
 public class Calculator implements Runnable {
 
