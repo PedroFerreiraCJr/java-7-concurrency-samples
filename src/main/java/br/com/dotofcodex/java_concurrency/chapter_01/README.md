@@ -14,7 +14,7 @@ Neste capítulo, nós iremos cobrir:
  - Processing uncontrolled exceptions in a group of threads - Processando exceções não controladas em um grupo de threads;
  - Creating a thread through a thread factory - Criando uma thread através de uma fábrica de threads.
 
-Introdução:
+## Introdução
 No mundo da computação, quando nós falamos sobre **concorrência**, nós falamos em uma série de tarefas
 que rodam simultâneamente em um computador. Essa simultâneidade pode ser real se o computador tiver mais
 do que um processador ou um processador multi-core, ou aparente se o computador tiver somente um núcleo
