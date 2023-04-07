@@ -41,6 +41,8 @@ A seguinte screenshot mostra as linhas do arquivo **log.txt** na execução dest
 Neste arquivo, nós podemos ver que as threads com mais alta prioridade terminar antes
 daquelas com baixa prioridade. Nós podemos ver a evolução dos status de cada thread.
 
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_02.png)
+
 O programa mostrado no console é a tabela de multiplicação calculada pelas threads e a evolução
 dos status de diferentes threads no arquivo **log.txt**. Deste forma, você consegue melhor visualizar
 a evolução das threads.
