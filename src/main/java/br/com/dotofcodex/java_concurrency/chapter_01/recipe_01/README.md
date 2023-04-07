@@ -68,6 +68,8 @@ for (int i=1; i<=10; i++) {
 A seguinte tela mostra parte da saída do programa. Nós podemos ver que todas as threads que nós
 criamos, rodam em paralelo para fazer o seu trabalho, como mostrado na seguinte tela:
 
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_01.png)
+
 Todo programa Java tem no mínimo uma thread de execução. Quando você roda o programa, a JVM roda
 a thread de execução que chama o método **main()** do programa.
 
