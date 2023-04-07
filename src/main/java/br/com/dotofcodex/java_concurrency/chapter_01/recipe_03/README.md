@@ -35,6 +35,8 @@ A seguinte screenshot mostra o resultado da execução do exemplo anterior. Nós
 como a thread **PrimeGenerator** escreve as mensagens e termina sua execução quando ela
 detecta que foi interrompida.
 
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_03.png)
+
 A classe Thread tem um atributo que armazena um valor booleano indicando se a thread foi interrompida ou não.
 Quando você chama o método **interrupt()** de uma thread, você está setando este atributo para true. O método 
 **isInterrupted()** somente retorna o valor deste atributo.
