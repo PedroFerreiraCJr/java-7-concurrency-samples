@@ -93,6 +93,6 @@ execução. Você pode implementar uma classe que estenda a classe **Thread** e 
 método **run()** desta classe. Então, você pode criar um objeto desta classe e chamar o 
 método **start()** para ter uma nova thread de execução.
 
-## Há mais (There is more...)
+## Veja também (See also)
  - Veja a receita, Criando threads através de uma factory, no capítulo 1, Gerenciamento de
 Threads.
