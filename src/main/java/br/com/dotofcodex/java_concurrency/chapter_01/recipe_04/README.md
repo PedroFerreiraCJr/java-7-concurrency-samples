@@ -126,7 +126,7 @@ thread.interrupt();
 A seguinte screenshot mostra o resultado da execução deste programa. Você pode ver como o objeto da classe
 **FileSearch** termina a sua execução quando ele detecta que ele foi interrompido.
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_04.png)
 
 Neste exemplo, nós usamos as exceções do Java para controlar a interrupção da Thread. Quando você roda este
 exemplo, o programa começa a ir através das pastas checando se elas tem o arquivo ou não. Por exemplo, se 
