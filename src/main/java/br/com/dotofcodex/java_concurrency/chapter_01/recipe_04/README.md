@@ -16,7 +16,7 @@ O exemplo desta receita foi implementado usando a IDE Eclipse. Se você usa o Ec
 o NetBeans, abra e crie um novo projeto Java.
 
 ## Como fazer (How to do it...)
-Siga esses passos para implementar o exemplo.
+Siga estes passos para implementar o exemplo:
  1. Crie uma classe chamada **FileSearch** e especifique que ela implementa a interface **Runnable**;
 ```java
 public class FileSearch implements Runnable {}

@@ -18,7 +18,7 @@ O exemplo desta receita foi implementado usando a IDE Eclipse. Se você usa o Ec
 o NetBeans, abra e crie um novo projeto Java.
 
 ## Como fazer (How to do it...)
-Siga esses passos para implementar o exemplo.
+Siga estes passos para implementar o exemplo:
  1. Crie uma classe chamada **PrimeGenerator** que extenda a classe **Thread**;
 ```java
 public class PrimeGenerator extends Thread {}
