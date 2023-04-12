@@ -86,7 +86,7 @@ public class SafeTask implements Runnable {
  7. Declare um objeto do tipo da classe **ThreadLocal<Date>**. Este método terá uma implementação implícita
 que inclui o método **initialValue()**. Este métod irá retornar o valor atual;
 ```java
-private static ThreadLocal<Date> startDate = new ThreadLocal<>() {
+private static ThreadLocal<Date> startDate = new ThreadLocal<Date>() {
     protected Date initialValue() {
         return new Date();
     }
@@ -98,7 +98,6 @@ private static ThreadLocal<Date> startDate = new ThreadLocal<>() {
 ```java
 @Override
 public void run() {
-    startDate = new Date();
     System.out.printf("Starting Thread: %s : %s%n", Thread.currentThread().getId(), startDate.get());
     
     try {
