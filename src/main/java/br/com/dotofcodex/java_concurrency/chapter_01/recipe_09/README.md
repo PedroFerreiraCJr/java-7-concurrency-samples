@@ -72,7 +72,7 @@ public class Main {
 tem um tempo de inicialização diferente mas, quando elas terminam, todas tem o mesmo valor no seu atributo
 **startDate**;
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_09_item_04.png)
 
  5. Como mencionado anteriormente, nós iremos usar o mecanismo de variáveis locais à thread para resolver
 este problema;
@@ -118,7 +118,7 @@ public void run() {
 Na captura de tela abaixo, você pode ver os resultados da execução do examplo **safe** (seguro). Agora, os
 3 objetos **Thread** tem o seu próprio valor do atributo **startDate**. Segue a captura de tela:
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_09.png)
 
 A variável local à thread armazena o valor do atributo para cada **Thread** que usa uma destas variáveis.
 Você pode ler o valor usando o método **get()**, e alterar o valor usando o método **set()**. A primeira vez
