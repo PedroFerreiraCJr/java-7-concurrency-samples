@@ -23,7 +23,7 @@ o NetBeans, abra e crie um novo projeto Java.
 Siga estes passos para implementar o exemplo:
  1. Primeiro, nós iremos implementar um programa que tenha o problema exposto anteriormente. Crie uma classe
 chamada **UnsafeTask** e especifique que ela implemente a interface **Runnable**. Declare um atributo 
-privado do tipo **java.util.Date**.
+privado do tipo **java.util.Date**;
 ```java
 public class UnsafeTask implements Runnable {
     private Date startDate;
@@ -136,13 +136,3 @@ outra thread **B**, a thread **B** terá o mesmo valor que a thread **A** na var
 pode sobrescrever o método **childValue()** que é chamado para inicializar o valor da thread filha na 
 variável local à thread. Ela recebe o valor da thread parent (parente) na variável loca à thread como um
 parâmetro.
-
-
-
-
-
-
-
-
-
-
