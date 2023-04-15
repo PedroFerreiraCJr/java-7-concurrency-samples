@@ -1,4 +1,4 @@
-# Recipe 10 - Grouping threads in a group[
+# Recipe 10 - Grouping threads in a group
 Uma funcionalidade interessante oferecida pela API de Concorrência do Java é a habilidade de agrupar threads.
 Isto nos permite tratar threads de um grupo como uma única unidade e fornece acesso aos objetos **Thread**
 que pertencem a um grupo para fazer uma operação com elas. Por exemplo, você tem algumas threads fazendo 
@@ -166,7 +166,7 @@ private static void waitFinish(ThreadGroup threadGroup) {
 Na seguinte captura de tela, vocÊ pode ver a saída do método **list()** e a saída gerada quando nós escrevemos
 o status de cada objeto **Thread**, como mostrado na seguinte captura de tela.
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_10.png)
 
 A classe **ThreadGroup** armazena os objetos **Thread** e outros objeto **ThreadGroup** associados com ele,
 então ele pode acessar todas as informações (status, por exemplo) e executar operações sobre todos os seus
