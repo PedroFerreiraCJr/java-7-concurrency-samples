@@ -127,7 +127,7 @@ threadGroup.list();
 com o objeto **ThreadGroup** e obtenha uma lista delas. Nós podemos usar este método para obter, por exemplo,
 o estado de cada **Thread**;
 ```java
-Thread[] threads = new Therad[threadGroup.activeCount()];
+Thread[] threads = new Thread[threadGroup.activeCount()];
 threadGroup.enumerate(threads);
 for (int i = 0; i < threadGroup.activeCount(); i++) {
     System.out.printf("Thread %s: %s%n", threads[i]
