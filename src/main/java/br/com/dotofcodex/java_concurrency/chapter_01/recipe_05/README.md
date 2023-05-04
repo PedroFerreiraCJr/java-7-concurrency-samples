@@ -97,6 +97,3 @@ A API de concorrência do Java tem outro método que faz com que o objeto **Thre
 Este é o método **yield()**, que indica para a JVM que o objeto **Thread** pode deixar a CPU para outras
 tarefas. A JVM não assegura que irá aceitar essa solicitação. Normalmente, este é usado somente para 
 propósitos de debug.
-
-
-
