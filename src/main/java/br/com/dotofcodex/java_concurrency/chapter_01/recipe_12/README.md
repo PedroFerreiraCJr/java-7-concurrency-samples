@@ -125,7 +125,7 @@ for (int i = 0; i < 10; i++) {
  9. Escreva no console as estatísticas da fábrica de threads;
 ```java
 System.out.printf("Factory stats:%n");
-System.out.printf("%s%n",factory.getStats());
+System.out.printf("%s%n", factory.getStatistics());
 ```
 
  10. Rode o exemplo e veja os resultados.
