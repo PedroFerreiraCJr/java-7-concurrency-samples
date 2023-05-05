@@ -122,5 +122,5 @@ Se nenhum destes tratadores existir, a JVM escreve o rastreamento da pilha da ex
 programa.
 
 ## Veja também (See also)
-- Veja a receita, **Processing uncontrolled exceptions in a thread, no capítulo 1, Gerenciamento
+- Veja a receita, **Processing uncontrolled exceptions in a thread**, no capítulo 1, Gerenciamento
 de Threads.
