@@ -206,7 +206,7 @@ uma das operações não será refletida no resultado final.
 
 Como você pode ver na seguinte captura de tela, você pode obter resultados incosistentes:
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_01_01_segundo_capitulo.png)
 
 Se você rodar o programa frequentemente, você irá obter resultados diferentes. A order da execução das threads 
 não é garantida pela JVM. Então toda vez que vocÊ executa, as threads irão ler e modificar o valor total da 
@@ -216,7 +216,7 @@ Agora, adicione a palavra reservada **synchronized** como você aprendeu antes e
 Como você pode ver na seguinte captura de tela, agora voê obter o resultado esperado. Se você rodar o programa
 frequentemente, você irá obter os mesmos resultados. Me refiro a seguinte captura de tela:
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_01_02_segundo_capitulo.png)
 
 Usando a palavra reservada **synchronized**, nós garantimos o acesso correto ao dado compartilhado em
 aplicações concorrentes.
