@@ -242,7 +242,7 @@ outra modificando o atributo **vacanciesCinema2**.
 Quando você roda este exemplo, você pode ver como o resultado final é sempre o número esperado de vagas para 
 cada cinema. Na seguinte captura de tela, você pode ver os resultados de uma execução da aplicação.
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_02_segundo_capitulo.png)
 
 ## Há mais (There is more...)
 Há outros usos importantes da palavra-chave **synchronized**. Veja a seção **ver também**, para outras 
