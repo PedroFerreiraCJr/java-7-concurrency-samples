@@ -29,12 +29,109 @@ o NetBeans, abra e crie um novo projeto Java.
 
 ## Como fazer (How to do it...)
 Siga estes passos para implementar o exemplo:
- 1. 
+ 1. Crie uma classe chamada **PrintQueue** que irá implementar a fila de impressão;
 ```java
-
+public class PrintQueue {
+    
+}
 ```
 
+ 2. Declare um objeto **Lock** e inicialize ele com um objeto da classe **ReentrantLock**;
+```java
+private final Lock queueLock = new ReentrantLock();
+```
 
+ 3. Implemente o método **printJob()**. Ele irá receber um **Object** como parâmetro e ele não irá retornar
+nenhum valor;
+```java
+public void printJob(Object document) {
+    
+}
+```
+
+ 4. Dentro do método **printJob()**, obtenha o controle do objeto **Lock** chamando o método **lock()**;
+```java
+queueLock.lock();
+```
+
+ 5. Então, inclua o seguinte código para simular a impressão de um documento;
+```java
+try {
+    Long duration = (long) Math.random() * 10_000;
+    System.out.println(Thread.currentThread().getName() +
+        ":PrintQueue: Printing a Job during " + 
+        (duration/1000) + " seconds");
+    Thread.sleep(duration);
+} catch(InterruptedException e) {
+    e.printStackTrace();
+}
+```
+
+ 6. Finalmente, libere o controle do objeto **lock** com o método **unlock()**;
+```java
+finally {
+    queueLock.unlock();
+}
+```
+
+ 7. Crie uma classe chamada **Job** e especifique que ela implementa a interface **Runnable**;
+```java
+public class Job implements Runnable {
+    
+}
+```
+
+ 8. Declare um objeto da classe **PrintQueue** e implemente o construtor da classe que inicializa este 
+objeto;
+```java
+private PrintQueue printQueue;
+
+public Job(PrintQueue printQueue) {
+    super();
+    this.printQueue = printQueue;
+}
+```
+
+ 9. Implemente o método **run()**. Ele usa o objeto **PrintQueue** para enviar um objeto para impressão;
+```java
+@Override
+public void run() {
+    System.out.printf("%s: Going to print a document%n", Thread.currentThread().getName());
+    printQueue.printJob(new Object());
+    System.out.printf("%s: The document has been printed%n",
+    Thread.currentThread().getName());
+}
+```
+
+ 10. Crie a classe **main** da aplicação implementando um classe chamada **Main** e adicionar o método
+**main()** a ela;
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+```
+
+ 11. Crie um objeto **PrintQueue** compartilhado;
+```java
+PrintQueue printQueue = new PrintQueue();
+```
+
+ 12. Crie 10 objetos **Job** e crie 10 **Thread** para rodá-los;
+```java
+Thread[] thread = new Thread[10];
+for (int i=0; i<10; i++) {
+    thread[i] = new Thread(new Job(printQueue) "Thread " + i);
+}
+```
+
+ 13. Inicie as 10 **threads**;
+```java
+for (int i=0; i<10; i++) {
+    thread[i].start();
+}
+```
 
 ## Como ele funciona (How it works...)
 
