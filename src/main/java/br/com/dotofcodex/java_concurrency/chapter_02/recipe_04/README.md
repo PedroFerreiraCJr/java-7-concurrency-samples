@@ -135,7 +135,7 @@ for (int i=0; i<10; i++) {
 ## Como ele funciona (How it works...)
 Na seguinte captura de tela, você consegue ver parte da saída em uma execução, deste exemplo:
 
-![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_04_segundo_capitulo.png)
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/435356ea3492a5ee1432c01d1ab5503c9a7ccf90/images/recipe_04_segundo_capitulo.png)
 
 A parte principal deste exemplo é o método **printJob()** da classe **PrintQueue**. Quando nós desejamos 
 implementar uma seção crítica usando **locks** e garantir que somente uma thread de execução rode um 
