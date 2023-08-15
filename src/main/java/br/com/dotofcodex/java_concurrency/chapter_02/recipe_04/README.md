@@ -154,34 +154,35 @@ da seção crítica, as outras **threads** que estão aguardando por este bloque
 causando uma situação de **deadlock**. Se você usa um bloco **try-catch** na sua seção crítica, não se 
 esqueça de colocar a sentença do método **unlock()** dentro da seção **finally**.
 
-## Nota (Note)
-
-
 ## Há mais (There is more...)
+A interface **Lock** (e a classe **ReentrantLock**) incluem outro método para obter o controle do 
+**lock**. É o método **tryLock()**. A grande diferença para o método **lock()**, é que este método, se a
+thread que usa ele não puder obter o controle do bloqueio, da interface **Lock**, ele retorna imediatamente
+e não suspende a **thread**. Este método retorna um valor **boolean**, **true**, se a thread obteve o 
+controle do bloqueio, e **false** caso contrário.
 
+## Nota (Note)
+Leve em consideração que é responsabilidade do programador considerar o resultado deste método e agir de 
+acordo. Se o método retornar o valor **false**, é esperado que seu programa não exccute a seção crítica.
+Caso contrário, você irá provavelmente ter resultados incorretos na sua aplicação.
+
+## Há mais (There is more...) continuação....
+A classe **ReentrantLock** também permite a você usar chamadas recursivas. Quando uma thread tem o controle
+do bloqueio e faz uma chamada recursiva, ele continua com o bloqueio, então a chamada do método **lock()**
+irá retornar imediatamente e a thread irá continuar com a execução da chamada recursiva. Além disso também
+podemos chamar outros métodos.
+
+## Mais informações (More info)
+Você tem que ser cuidadoso com o uso de **locks** para evitar **deadlocks**. Esta situação ocorre quando
+duas ou mais **threads** são bloqueadas aguardando pelo bloqueio que nunca será liberado. Por exemplo,
+a **thread** (A) bloqueia a trava (X) e a **thread** (B) bloqueia a trava (Y). Agora, se a **thread** (A)
+tentar bloquear a trava (Y) e a thread (B) simultaneamente tentar bloquear a trava (X), ambas as threads 
+irão sem bloqueadas indefinidamente, porque elas estão aguardando por um bloqueio que nunca será liberado.
+Note que o problema ocorre, porque ambas as threads tentam obter os bloqueios na ordem oposta. O Apêndice,
+Concurrent Programming Design, explica algumas dicas para projetar aplicações concorrentes adequadamente e
+evitar estes problemas de **deadlock**.
 
 ## Veja também (See also)
-- Organizando atributos independentes em classes sincronizadas, no capítulo 2, Sincronização básica de
-threads.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ - A receita Sincronizando um método, no capítulo 2, Sincronização básica de threads;
+ - A receita, Usando múltiplas condições em um Lock, no capítulo 2, Sincronização básica de threads;
+ - A receita, Monitorando a interface Lock, no capítulo 8, Testando aplicações concorrentes.
