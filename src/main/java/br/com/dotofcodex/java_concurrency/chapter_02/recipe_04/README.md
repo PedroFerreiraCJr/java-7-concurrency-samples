@@ -134,7 +134,25 @@ for (int i=0; i<10; i++) {
 ```
 
 ## Como ele funciona (How it works...)
+Na seguinte captura de tela, você consegue ver parte da saída em uma execução, deste exemplo:
 
+![saída do programa]()
+
+A parte principal deste exemplo é o método **printJob()** da classe **PrintQueue**. Quando nós desejamos 
+implementar uma seção crítica usando **locks** e garantir que somente uma thread de execução rode um 
+bloco de código, nós temos que criar um objeto **ReentrantLock**. No começo da seção crítica, nós temos
+que obter o controle do bloqueio (**lock**) usando o método **lock()**. Quando uma **thread** (A) chame 
+este método, se nenhuma outra **thread** tem o controle do **lock**, o método dá para a **thread** (A)
+o controle do **lock** e retorna imediatamente para permitir a execução da seção crítica por esta 
+**thread**. Por outro lado, se houver outra **thread** (B) executando a seção crítica controlada por este
+**lock**, o método **lock()** poe a **thread** (A) para dormir (suspende ela) até que a **thread** (B)
+termine a execução da seção crítica.
+
+No final da seção crítica, nós temos que usar o método **unlock()** para liberar o controle do **lock**
+e permitir a outras thread rodarem esta seção crítica. Se você não chamar o método **unlock()** ao final 
+da seção crítica, as outras **threads** que estão aguardando por este bloqueio irão aguardar para sempre,
+causando uma situação de **deadlock**. Se você usa um bloco **try-catch** na sua seção crítica, não se 
+esqueça de colocar a sentença do método **unlock()** dentro da seção **finally**.
 
 ## Nota (Note)
 
@@ -145,3 +163,25 @@ for (int i=0; i<10; i++) {
 ## Veja também (See also)
 - Organizando atributos independentes em classes sincronizadas, no capítulo 2, Sincronização básica de
 threads.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
