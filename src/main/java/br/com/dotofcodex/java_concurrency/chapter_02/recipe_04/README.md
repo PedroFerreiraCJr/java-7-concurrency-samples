@@ -98,8 +98,7 @@ public Job(PrintQueue printQueue) {
 public void run() {
     System.out.printf("%s: Going to print a document%n", Thread.currentThread().getName());
     printQueue.printJob(new Object());
-    System.out.printf("%s: The document has been printed%n",
-    Thread.currentThread().getName());
+    System.out.printf("%s: The document has been printed%n", Thread.currentThread().getName());
 }
 ```
 
@@ -122,7 +121,7 @@ PrintQueue printQueue = new PrintQueue();
 ```java
 Thread[] thread = new Thread[10];
 for (int i=0; i<10; i++) {
-    thread[i] = new Thread(new Job(printQueue) "Thread " + i);
+    thread[i] = new Thread(new Job(printQueue), "Thread " + i);
 }
 ```
 
