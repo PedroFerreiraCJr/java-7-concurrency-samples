@@ -187,10 +187,22 @@ threadWriter.start();
 ```
 
 ## Como ele funciona (How it works...)
+Na seguinte captura de tela, você pode ver uma parte da saída da execução deste exemplo:
 
 ![saída do programa]()
 
+Como mencionado anteriormente, a classe **ReentrantReadWriteLock** tem duas travas (locks), um para 
+operações de leitura e uma para operações de escrita. O lock usado em operações de leitura é obtido com
+o método **readLock()** declarado na interface **ReadWriteLock**.  Este lock é um objeto que implementa a 
+interaface **Lock**, então nós podemos usar os métodos: **lock()**, **unlock()**, e **tryLock()**. O lock
+usado em operações de escrita é obtido através do método **writeLock()** declarado na interace 
+**ReadWriteLock**. Este **lock** é um objeto que implementa a interface **Lock**, então nós podemos usar
+ os métodos: **lock()**, **unlock()**, e **tryLock()**. É responsabilidade do programador assegurar o uso 
+correto deste locks, usando ele com o mesmo propósito para o qual eles foram projetas. Quando você obtem 
+a trava de leitura da interface **Lock** você não pode modificar o valor da variável. Caso contrário, 
+você provavelmente iria ter erros de dados inconsistentes.
+
 ## Veja também (See also)
- - A receita Sincronizando um método, no capítulo 2, Sincronização básica de threads;
- - A receita, Usando múltiplas condições em um Lock, no capítulo 2, Sincronização básica de threads;
- - A receita, Monitorando a interface Lock, no capítulo 8, Testando aplicações concorrentes.
+ - A receita, **Synchronizing a block of code with a Lock**, no capítulo 2, Sincronização básica de
+threads;
+ - A receita, **Monitorin a Lock interface**, no capítulo 8, Testando aplicações concorrentes;
