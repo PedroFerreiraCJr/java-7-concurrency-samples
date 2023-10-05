@@ -189,7 +189,7 @@ threadWriter.start();
 ## Como ele funciona (How it works...)
 Na seguinte captura de tela, você pode ver uma parte da saída da execução deste exemplo:
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_05_segundo_capitulo.png)
 
 Como mencionado anteriormente, a classe **ReentrantReadWriteLock** tem duas travas (locks), um para 
 operações de leitura e uma para operações de escrita. O lock usado em operações de leitura é obtido com
