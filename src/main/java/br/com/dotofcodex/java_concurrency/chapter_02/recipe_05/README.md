@@ -33,7 +33,7 @@ public class PricesInfo {
  3. Declare um objeto **ReadWriteLock** chamado **lock**;
 ```java
 public class PricesInfo {
-    private ReadWriteLock lock; 
+    private ReadWriteLock lock;
 }
 ```
 
@@ -41,8 +41,8 @@ public class PricesInfo {
 criamos um novo objeto **ReentrantReadWriteLock**;
 ```java
 public PricesInfo() {
-    this.prices1 = 1.0;
-    this.prices2 = 2.0;
+    this.price1 = 1.0;
+    this.price2 = 2.0;
     this.lock = new ReentrantReadWriteLock();
 }
 ```
@@ -118,9 +118,9 @@ public class Writer implements Runnable {
 
  12. Declare um objeto **PricesInfo** e implemente o construtor da classe que inicializa este objeto;
 ```java
-private PricesInfo priceInfo;
+private PricesInfo pricesInfo;
 
-public Write(PricesInfo priceInfo) {
+public Writer(PricesInfo pricesInfo) {
     this.pricesInfo = pricesInfo;
 }
 ```
@@ -173,7 +173,7 @@ for (int i=0; i<5; i++){
 
 16. Crie um objeto escritor e uma **Thread** para executá-lo;
 ```java
-Write writer = new Writer(pricesInfo);
+Writer writer = new Writer(pricesInfo);
 Thread threadWriter = new Thread(writer);
 ```
 
