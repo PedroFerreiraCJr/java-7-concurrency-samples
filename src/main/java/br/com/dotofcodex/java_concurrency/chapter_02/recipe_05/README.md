@@ -171,13 +171,13 @@ for (int i=0; i<5; i++){
 }
 ```
 
-16. Crie um objeto escritor e uma **Thread** para executá-lo;
+ 17. Crie um objeto escritor e uma **Thread** para executá-lo;
 ```java
 Writer writer = new Writer(pricesInfo);
 Thread threadWriter = new Thread(writer);
 ```
 
-16. Rode as threads;
+ 18. Rode as threads;
 ```java
 for (int i=0; i<5; i++){
     threadsReader[i].start();
@@ -205,4 +205,4 @@ você provavelmente iria ter erros de dados inconsistentes.
 ## Veja também (See also)
  - A receita, **Synchronizing a block of code with a Lock**, no capítulo 2, Sincronização básica de
 threads;
- - A receita, **Monitorin a Lock interface**, no capítulo 8, Testando aplicações concorrentes;
+ - A receita, **Monitoring a Lock interface**, no capítulo 8, Testando aplicações concorrentes;
