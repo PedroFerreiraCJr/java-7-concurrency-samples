@@ -1,5 +1,5 @@
 # Recipe 06 - Modifying Lock fairness
-O construtor das classes **ReentrantLock** e **ReentrantReadWriteLock** adimite um parâmetro booleano
+O construtor das classes **ReentrantLock** e **ReentrantReadWriteLock** admite um parâmetro booleano
 chamado *fair* que permite a você controlar o comportamento de ambas as classes. O valor **false** é o
 valor padrão e é chamado de **non-fair mode** (o que pode ser traduzido para **modo não justo**). Neste 
 modo, quando houver alguma thread aguardando por uma trava (lock, **ReentrantLock**, ou 
@@ -22,8 +22,8 @@ então leia esta receita para implementar o exemplo.
 ## Como fazer (How to do it...)
 Siga estes passos para implementar o exemplo:
  1. Implemente o exemplo explicado na receita: **Synchronizing a block of code with a Lock**;
- 2. Na classe **PrintQueue**, modifique a construção do objeto **Lock**. A nova instrução e dada como 
-se segue;
+ 2. Na classe **PrintQueue**, modifique a construção do objeto **Lock**. A nova instrução é dada como 
+a seguir;
 ```java
 private Lock queueLock = new ReentrantLock(true);
 ```
@@ -66,7 +66,7 @@ public void printJob(Object document) {
 ```
 
  4. Modifique na classe **Main** o bloco de código que inicializa as threads. O novo bloco de código é
-dado como o que segue;
+dado como o seguinte;
 ```java
 for (int i = 0; i < 10; i++) {
     thread[i].start();
