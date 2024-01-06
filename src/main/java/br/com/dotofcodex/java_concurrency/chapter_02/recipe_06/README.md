@@ -82,7 +82,7 @@ for (int i = 0; i < 10; i++) {
 ## Como ele funciona (How it works...)
 Na seguinte captura de tela você consegue ver parte da saída da execução deste exemplo:
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_06_01_segundo_capitulo.png)
 
 Todas as threads são criados com uma diferença de 0.1 segundos. A primeira thread que solicita o controle
 da trava é a **Thread-0**, e então a **Thread-1**, e assim por diante. Enquanto a **Thread-0** está 
@@ -101,7 +101,7 @@ Para ver a diferença com o modo **non-fair**, altere o parâmetro passado para 
 e ponha o valor **false**. Na seguinte captura de tela, você pode ver o resultado da execução do 
 exemplo modificado.
 
-![saída do programa]()
+![saída do programa](https://raw.githubusercontent.com/PedroFerreiraCJr/traducao-java-7-concurrency/master/images/recipe_06_02_segundo_capitulo.png)
 
 Neste caso, as threads são executas na ordem em que foram criadas mas cada thread executa os dois blocos 
 de código protegido. No entanto, este comportamento não é garantido porque, como explicado anteriormente, 
